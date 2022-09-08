@@ -1,0 +1,80 @@
+2022-09-08T02:05:29.452Z [poke-api] error POST  - Unexpected token n in JSON at position 7
+2022-09-08T02:07:34.883Z [poke-api] error POST  - Unexpected token ' in JSON at position 7
+2022-09-08T02:09:06.463Z [poke-api] error POST  - column "nome" of relation "pokemons" does not exist
+2022-09-08T02:13:19.354Z [poke-api] error POST  - column "nome" of relation "pokemons" does not exist
+2022-09-08T02:13:25.709Z [poke-api] error POST  - todas as informacoes sao necessárias para cadastrar o pokemon
+2022-09-08T02:13:36.832Z [poke-api] error POST  - column "nome" of relation "pokemons" does not exist
+2022-09-08T02:20:46.058Z [poke-api] info POST /pokemon - {"nome":"charmander","tipo":"fogo","sexo":"m","apelido":"jiló","tamanho":"pequeno"}
+2022-09-08T02:25:16.924Z [poke-api] info POST /pokemon - {"nome":"bulbasalro","tipo":"planta","sexo":"m","apelido":"sapo","tamanho":"pequeno"}
+2022-09-08T02:48:24.887Z [poke-api] error GET  - pokemonService.getPokemons is not a function
+2022-09-08T02:50:45.653Z [poke-api] info GET /pokemon
+2022-09-08T03:00:16.730Z [poke-api] info GET /pokemon:id
+2022-09-08T03:01:09.123Z [poke-api] info GET /pokemon:id
+2022-09-08T03:01:14.761Z [poke-api] info GET /pokemon:id
+2022-09-08T03:10:26.030Z [poke-api] info DELETE /pokemon/1 
+2022-09-08T03:10:40.016Z [poke-api] info GET /pokemon
+2022-09-08T03:10:46.924Z [poke-api] info GET /pokemon
+2022-09-08T03:11:48.549Z [poke-api] info GET /pokemon
+2022-09-08T03:11:56.051Z [poke-api] info POST /pokemon - {"nome":"bulbasalro","tipo":"planta","sexo":"m","apelido":"sapo","tamanho":"pequeno"}
+2022-09-08T03:11:56.821Z [poke-api] info POST /pokemon - {"nome":"bulbasalro","tipo":"planta","sexo":"m","apelido":"sapo","tamanho":"pequeno"}
+2022-09-08T03:11:57.446Z [poke-api] info POST /pokemon - {"nome":"bulbasalro","tipo":"planta","sexo":"m","apelido":"sapo","tamanho":"pequeno"}
+2022-09-08T03:11:59.628Z [poke-api] info GET /pokemon
+2022-09-08T03:12:05.308Z [poke-api] info DELETE /pokemon/1 
+2022-09-08T03:12:09.181Z [poke-api] info DELETE /pokemon/3 
+2022-09-08T03:12:28.641Z [poke-api] info GET /pokemon
+2022-09-08T03:17:53.487Z [poke-api] info DELETE /pokemon/3 
+2022-09-08T03:18:03.285Z [poke-api] info GET /pokemon
+2022-09-08T03:19:00.598Z [poke-api] info GET /pokemon
+2022-09-08T03:19:11.323Z [poke-api] info DELETE /pokemon/4 
+2022-09-08T03:19:15.246Z [poke-api] info GET /pokemon
+2022-09-08T03:33:52.684Z [poke-api] error PUT  - Unexpected token E in JSON at position 7
+2022-09-08T03:35:16.047Z [poke-api] error PUT  - todas as informacoes sao necessárias para atualizar o pokemon
+2022-09-08T03:36:11.226Z [poke-api] error PUT  - Unexpected string in JSON at position 119
+2022-09-08T03:36:21.943Z [poke-api] error PUT  - Unexpected string in JSON at position 119
+2022-09-08T03:36:40.656Z [poke-api] error PUT  - syntax error at or near "="
+2022-09-08T03:37:01.806Z [poke-api] error PUT  - syntax error at or near "="
+2022-09-08T03:40:03.200Z [poke-api] error PUT  - syntax error at or near "="
+2022-09-08T03:41:30.756Z [poke-api] error PUT  - syntax error at or near "="
+2022-09-08T03:41:40.682Z [poke-api] info UPDATE /pokemon - {"nome":"pikachu","tipo":"eletrico","sexo":"f","apelido":"rato","tamanho":"pequeno","pokemon_id":"5"}
+2022-09-08T03:41:52.122Z [poke-api] info GET /pokemon
+2022-09-08T03:45:54.094Z [poke-api] info PUT /pokemon - undefined
+2022-09-08T03:46:03.367Z [poke-api] info GET /pokemon
+2022-09-08T03:48:07.537Z [poke-api] info PUT /pokemon - {"pokemon_id":5,"nome":"ratata","tipo":"eletrico","sexo":"f","apelido":"rato","tamanho":"pequeno"}
+2022-09-08T03:49:52.724Z [poke-api] info POST /pokemon - {"pokemon_id":6,"nome":"pidiotto","tipo":"normal","sexo":"f","apelido":"passarinho","tamanho":"pequeno"}
+2022-09-08T03:49:53.622Z [poke-api] info POST /pokemon - {"pokemon_id":7,"nome":"pidiotto","tipo":"normal","sexo":"f","apelido":"passarinho","tamanho":"pequeno"}
+2022-09-08T03:49:54.153Z [poke-api] info POST /pokemon - {"pokemon_id":8,"nome":"pidiotto","tipo":"normal","sexo":"f","apelido":"passarinho","tamanho":"pequeno"}
+2022-09-08T03:50:09.701Z [poke-api] info GET /pokemon
+2022-09-08T03:50:24.433Z [poke-api] info DELETE /pokemon/7 
+2022-09-08T03:50:30.005Z [poke-api] info GET /pokemon
+2022-09-08T03:51:05.179Z [poke-api] info PUT /pokemon - undefined
+2022-09-08T03:51:16.772Z [poke-api] info GET /pokemon
+2022-09-08T03:51:29.487Z [poke-api] info PUT /pokemon - {"pokemon_id":8,"nome":"ditto","tipo":"terra","sexo":"m","apelido":"terra","tamanho":"pequeno"}
+2022-09-08T03:51:37.096Z [poke-api] info GET /pokemon
+2022-09-08T03:52:00.620Z [poke-api] info GET /pokemon:id
+2022-09-08T04:26:30.659Z [poke-api] info POST /client - {"client_id":1,"nome":"jose","endereco":"rua das pedras","cidade":"Charqueadas","sexo":"masculino"}
+2022-09-08T04:26:45.281Z [poke-api] info POST /client - {"client_id":2,"nome":"pedro","endereco":"rua das pedras","cidade":"Charqueadas","sexo":"masculino"}
+2022-09-08T04:26:48.983Z [poke-api] info POST /client - {"client_id":3,"nome":"joao","endereco":"rua das pedras","cidade":"Charqueadas","sexo":"masculino"}
+2022-09-08T04:26:49.508Z [poke-api] info POST /client - {"client_id":4,"nome":"joao","endereco":"rua das pedras","cidade":"Charqueadas","sexo":"masculino"}
+2022-09-08T04:26:49.980Z [poke-api] info POST /client - {"client_id":5,"nome":"joao","endereco":"rua das pedras","cidade":"Charqueadas","sexo":"masculino"}
+2022-09-08T04:26:50.402Z [poke-api] info POST /client - {"client_id":6,"nome":"joao","endereco":"rua das pedras","cidade":"Charqueadas","sexo":"masculino"}
+2022-09-08T04:27:46.462Z [poke-api] info PUT /client - {"client_id":3,"nome":"paulo","endereco":"rua das pedras","cidade":"Charqueadas","sexo":"masculino"}
+2022-09-08T04:27:58.077Z [poke-api] info DELETE /client/2 
+2022-09-08T04:28:03.507Z [poke-api] info GET /client:id
+2022-09-08T04:28:12.560Z [poke-api] info GET /client
+2022-09-08T04:29:07.689Z [poke-api] info PUT /client - {"client_id":1,"nome":"paulo","endereco":"rua das pedras","cidade":"Charqueadas","sexo":"masculino"}
+2022-09-08T04:29:16.323Z [poke-api] info GET /client
+2022-09-08T04:55:11.305Z [poke-api] error GET  - column "sales_id" does not exist
+2022-09-08T04:58:03.620Z [poke-api] info POST /sales - {"sale_id":1,"client_id":4,"pokemon_id":2,"value":"200","date":"2022-09-05T03:00:00.000Z"}
+2022-09-08T04:58:06.816Z [poke-api] info POST /sales - {"sale_id":2,"client_id":4,"pokemon_id":2,"value":"200","date":"2022-09-05T03:00:00.000Z"}
+2022-09-08T04:58:07.278Z [poke-api] info POST /sales - {"sale_id":3,"client_id":4,"pokemon_id":2,"value":"200","date":"2022-09-05T03:00:00.000Z"}
+2022-09-08T04:58:07.677Z [poke-api] info POST /sales - {"sale_id":4,"client_id":4,"pokemon_id":2,"value":"200","date":"2022-09-05T03:00:00.000Z"}
+2022-09-08T04:58:08.013Z [poke-api] info POST /sales - {"sale_id":5,"client_id":4,"pokemon_id":2,"value":"200","date":"2022-09-05T03:00:00.000Z"}
+2022-09-08T04:58:08.421Z [poke-api] info POST /sales - {"sale_id":6,"client_id":4,"pokemon_id":2,"value":"200","date":"2022-09-05T03:00:00.000Z"}
+2022-09-08T04:58:09.041Z [poke-api] info POST /sales - {"sale_id":7,"client_id":4,"pokemon_id":2,"value":"200","date":"2022-09-05T03:00:00.000Z"}
+2022-09-08T04:58:22.590Z [poke-api] error GET  - column "sales_id" does not exist
+2022-09-08T04:58:45.275Z [poke-api] info GET /sales:id
+2022-09-08T04:59:17.083Z [poke-api] error PUT  - todas as informacoes sao necessárias para atualizar o salese
+2022-09-08T05:01:40.125Z [poke-api] error PUT  - todas as informacoes sao necessárias para atualizar uma venda -- [object Object]
+2022-09-08T05:02:02.628Z [poke-api] error PUT  - todas as informacoes sao necessárias para atualizar uma venda -- {"client_id":6,"pokemon_id":6,"value":500,"date":"2022-09-03","sale_id":2}
+2022-09-08T05:02:34.727Z [poke-api] info PUT /sales - {"sale_id":2,"client_id":6,"pokemon_id":6,"value":"500","date":"2022-09-03T03:00:00.000Z"}
+2022-09-08T05:02:41.086Z [poke-api] info GET /sales
