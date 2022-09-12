@@ -3,6 +3,7 @@ import fetch from "node-fetch";
 
 async function novoPokemon(req, res, next) {
     try {
+        if(req.userClass != 'admin') throw new Error('vc nao tem permição para cadastrar Pokemons');
         let poke = req.body;
         if (!poke.cod || !poke.apelido) {
             throw new Error('todas as informacoes sao necessárias para cadastrar o pokemon')
@@ -27,7 +28,7 @@ async function getPokemons(req, res, next) {
 async function getPokemon(req, res, next) {
     try {
         let poke = await pokemonService.getPokemon(req.params.id)         
-        
+        if(!poke) return res.status(404).send('Pokemon nao existe');
         //uso da API pokemon
         let pokeApiData = await fetch(`https://pokeapi.co/api/v2/pokemon/${poke.poke_cod}`, {method: 'GET'});
         pokeApiData = await pokeApiData.json();
@@ -45,6 +46,11 @@ async function getPokemon(req, res, next) {
 
 async function deletePokemon(req, res, next) {
     try {
+        if(req.userClass != 'admin') throw new Error('vc nao tem permição para Deletar Pokemons');
+        
+        let poke = await pokemonService.getPokemon(req.params.id);
+        if(!poke) return res.status(404).send('Pokemon nao existe');
+              
         await pokemonService.deletePokemon(req.params.id);
         res.end();
         logger.info(`DELETE /pokemon/${req.params.id} `)
@@ -55,7 +61,12 @@ async function deletePokemon(req, res, next) {
 
 async function updatePokemon(req, res, next) {
     try {
+        if(req.userClass != 'admin') throw new Error('vc nao tem permição para Atualizar Pokemons');
         let poke = req.body;
+        
+        let ConsultaPoke = await pokemonService.getPokemon(poke.poke_id);
+        if(!ConsultaPoke) return res.status(404).send('Pokemon nao existe');
+       
         if (!poke.apelido || !poke.poke_id) {
             throw new Error('todas as informacoes sao necessárias para atualizar o pokemon')
         }

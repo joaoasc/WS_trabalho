@@ -172,3 +172,32 @@
 2022-09-12T01:09:58.731Z [poke-api] error GET  - Cannot read properties of undefined (reading 'poke_cod')
 2022-09-12T01:10:02.594Z [poke-api] info GET /pokemon
 2022-09-12T01:10:28.450Z [poke-api] info GET /pokemon
+2022-09-12T01:14:30.767Z [poke-api] info GET /pokemon
+2022-09-12T01:17:28.140Z [poke-api] info GET /pokemon:id
+2022-09-12T01:17:48.930Z [poke-api] info GET /pokemon
+2022-09-12T01:22:29.767Z [poke-api] info GET /pokemon
+2022-09-12T01:22:35.629Z [poke-api] info GET /pokemon:id
+2022-09-12T01:30:55.968Z [poke-api] error POST  - concole is not defined
+2022-09-12T01:31:25.536Z [poke-api] info POST /pokemon - {"poke_id":4,"poke_cod":"7","apelido":"nao lembro"}
+2022-09-12T01:31:39.258Z [poke-api] error GET  - Cannot read properties of undefined (reading 'poke_cod')
+2022-09-12T01:33:19.422Z [poke-api] info GET /pokemon:id
+2022-09-12T01:33:45.094Z [poke-api] info GET /pokemon
+2022-09-12T01:34:16.323Z [poke-api] info PUT /pokemon - undefined
+2022-09-12T01:34:22.288Z [poke-api] info PUT /pokemon - {"poke_id":4,"poke_cod":"7","apelido":"fogareu"}
+2022-09-12T01:34:25.367Z [poke-api] info GET /pokemon
+2022-09-12T01:34:39.656Z [poke-api] info DELETE /pokemon/2 
+2022-09-12T01:34:42.721Z [poke-api] info GET /pokemon
+2022-09-12T01:35:46.113Z [poke-api] info GET /pokemon
+2022-09-12T01:35:53.371Z [poke-api] error POST  - vc nao tem permição para cadastrar Pokemons
+2022-09-12T01:37:05.053Z [poke-api] error GET  - vc nao tem permição para consultar clientes
+2022-09-12T01:37:22.932Z [poke-api] info GET /client
+2022-09-12T01:37:39.906Z [poke-api] info GET /client:id
+2022-09-12T01:39:35.755Z [poke-api] info GET /pokemon:id
+2022-09-12T01:40:12.819Z [poke-api] info DELETE /pokemon/500 
+2022-09-12T01:42:34.488Z [poke-api] error DELETE  - vc nao tem permição para deletar clientes
+2022-09-12T01:45:21.463Z [poke-api] error DELETE  - Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+2022-09-12T01:46:51.880Z [poke-api] info DELETE /pokemon/1 
+2022-09-12T01:49:41.066Z [poke-api] info PUT /pokemon - {"poke_id":4,"poke_cod":"7","apelido":"ze"}
