@@ -31,7 +31,8 @@ async function getClients(req, res, next) {
 async function getClient(req, res, next) {
     try {
         if(req.userClass != 'admin') throw new Error('vc nao tem permição para consultar clientes');
-        let client = await clientService.getClient(req);
+        
+        let client = await clientService.getClient(req.params.id);
         if(!client) return res.status(404).send('cliente nao existe');
         res.send(client);
         logger.info(`GET /client:id`);

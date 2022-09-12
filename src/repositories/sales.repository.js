@@ -3,8 +3,8 @@ import { connect } from './connection.js';
 async function insertSales(sales) {
     const conn = await connect();
     try {
-        const sql = 'INSERT INTO sales(client_id, pokemon_id, value, date) VALUES ($1,$2,$3,$4) RETURNING *';
-        const values = [sales.client_id, sales.pokemon_id, sales.value, sales.date];
+        const sql = 'INSERT INTO sales(client_id, poke_id, value) VALUES ($1,$2,$3) RETURNING *';
+        const values = [sales.client_id, sales.poke_id, sales.value];
         const res = await conn.query(sql, values);
         return res.rows[0];
     } catch (error) {
@@ -42,9 +42,9 @@ async function updateSales(sales) {
     const conn = await connect();
     try {
         const sql = 'UPDATE sales ' +
-                    'SET client_id = $1, pokemon_id = $2, value = $3, date = $4 ' +
-                    'WHERE sale_id = $5 RETURNING *';
-        const values = [sales.client_id, sales.pokemon_id, sales.value, sales.date, sales.sale_id];
+                    'SET client_id = $1, poke_id = $2, value = $3 ' +
+                    'WHERE sale_id = $4 RETURNING *';
+        const values = [sales.client_id, sales.poke_id, sales.value, sales.sale_id];
         const res = await conn.query(sql, values);
         return res.rows[0];
     } catch (error) {
@@ -57,7 +57,7 @@ async function updateSales(sales) {
 async function deleteSales(id) {
     const conn = await connect();
     try {
-        await conn.query('DELETE FROM sales WHERE sales_id = $1', [id]);
+        await conn.query('DELETE FROM sales WHERE sale_id = $1', [id]);
     } catch (error) {
         throw error;
     } finally {

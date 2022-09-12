@@ -201,3 +201,17 @@
     --- property 'socket' closes the circle
 2022-09-12T01:46:51.880Z [poke-api] info DELETE /pokemon/1 
 2022-09-12T01:49:41.066Z [poke-api] info PUT /pokemon - {"poke_id":4,"poke_cod":"7","apelido":"ze"}
+2022-09-12T02:16:21.547Z [poke-api] error POST  - Cannot read properties of undefined (reading 'params')
+2022-09-12T02:19:57.065Z [poke-api] info GET /client:id
+2022-09-12T02:23:07.931Z [poke-api] info GET /pokemon
+2022-09-12T02:23:15.203Z [poke-api] info POST /sales - {"sale_id":1,"client_id":1,"poke_id":4,"value":"200"}
+2022-09-12T02:25:28.532Z [poke-api] info GET /sales
+2022-09-12T02:30:24.294Z [poke-api] info GET /sales:id
+2022-09-12T02:37:51.379Z [poke-api] error DELETE  - column "sales_id" does not exist
+2022-09-12T02:39:15.191Z [poke-api] info DELETE /sales/1 
+2022-09-12T02:39:25.448Z [poke-api] info GET /sales
+2022-09-12T02:39:35.472Z [poke-api] info POST /sales - {"sale_id":2,"client_id":1,"poke_id":4,"value":"200"}
+2022-09-12T02:39:36.042Z [poke-api] info POST /sales - {"sale_id":3,"client_id":1,"poke_id":4,"value":"200"}
+2022-09-12T02:39:36.624Z [poke-api] info POST /sales - {"sale_id":4,"client_id":1,"poke_id":4,"value":"200"}
+2022-09-12T02:39:41.448Z [poke-api] info GET /sales
+2022-09-12T02:43:24.236Z [poke-api] info GET /pokemon
