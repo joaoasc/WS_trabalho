@@ -2,6 +2,7 @@ import express from 'express';
 import winston from 'winston';
 import cors from 'cors';
 
+import routerLogin from './router/login.js';
 import routerPokemons from './router/pokemons.js';
 import routerClients from './router/clients.js';
 import routerSales from './router/sales.js';
@@ -30,6 +31,7 @@ app.use(express.json());
 app.use(cors());
 
 //Rotas
+app.use('/login', routerLogin);
 app.use('/pokemon', routerPokemons);
 app.use('/client', routerClients);
 app.use('/sales', routerSales);

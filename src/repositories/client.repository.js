@@ -17,7 +17,7 @@ async function insertClient(client) {
 async function getClients() {
     const conn = await connect();
     try {
-        const res = await conn.query('SELECT * FROM clients');
+        const res = await conn.query('SELECT * FROM clients ORDER BY client_id');
         return res.rows;
     } catch (error) {
         throw error;
@@ -26,10 +26,10 @@ async function getClients() {
     }
 }
 
-async function getClient(id) {
+async function getClient(req) {
     const conn = await connect();
     try {
-        const res = await conn.query('SELECT * FROM clients WHERE client_id = $1', [id]);
+        const res = await conn.query('SELECT * FROM clients WHERE client_id = $1', [req.params.id]);
         return res.rows[0];
     } catch (error) {
         throw error;

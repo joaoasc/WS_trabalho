@@ -3,8 +3,8 @@ import { connect } from './connection.js';
 async function insertPokemon(poke) {
     const conn = await connect();
     try {
-        const sql = 'INSERT INTO pokemons(nome, tipo, sexo, apelido, tamanho) VALUES ($1,$2,$3,$4,$5) RETURNING *';
-        const values = [poke.nome, poke.tipo, poke.sexo, poke.apelido, poke.tamanho];
+        const sql = 'INSERT INTO pokemons(poke_cod, apelido) VALUES ($1,$2) RETURNING *';
+        const values = [poke.cod, poke.apelido];
         const res = await conn.query(sql, values);
         return res.rows[0];
     } catch (error) {
@@ -18,7 +18,7 @@ async function insertPokemon(poke) {
 async function getPokemons() {
     const conn = await connect();
     try {
-        const res = await conn.query('SELECT * FROM pokemons');
+        const res = await conn.query('SELECT * FROM pokemons ORDER BY poke_id');
         return res.rows;
     } catch (error) {
         throw error;
@@ -31,7 +31,7 @@ async function getPokemons() {
 async function getPokemon(id) {
     const conn = await connect();
     try {
-        const res = await conn.query('SELECT * FROM pokemons WHERE pokemon_id = $1', [id]);
+        const res = await conn.query('SELECT * FROM pokemons WHERE poke_id = $1', [id]);
         return res.rows[0];
     } catch (error) {
         throw error;
@@ -45,9 +45,9 @@ async function updatePokemon(poke) {
     const conn = await connect();
     try {
         const sql = 'UPDATE pokemons ' +
-            'SET nome = $1, tipo = $2, sexo = $3, apelido = $4, tamanho = $5 ' +
-            'WHERE pokemon_id = $6 RETURNING *';
-        const values = [poke.nome, poke.tipo, poke.sexo, poke.apelido, poke.tamanho, poke.pokemon_id];
+                    'SET apelido = $1 ' +
+                    'WHERE poke_id = $2 RETURNING *';
+        const values = [poke.apelido, poke.poke_id];
         const res = await conn.query(sql, values);
         return res.rows[0];
     } catch (error) {
@@ -61,7 +61,7 @@ async function updatePokemon(poke) {
 async function deletePokemon(id) {
     const conn = await connect();
     try {
-        await conn.query('DELETE FROM pokemons WHERE pokemon_id = $1', [id]);
+        await conn.query('DELETE FROM pokemons WHERE poke_id = $1', [id]);
     } catch (error) {
         throw error;
     } finally {

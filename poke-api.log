@@ -78,3 +78,97 @@
 2022-09-08T05:02:02.628Z [poke-api] error PUT  - todas as informacoes sao necessárias para atualizar uma venda -- {"client_id":6,"pokemon_id":6,"value":500,"date":"2022-09-03","sale_id":2}
 2022-09-08T05:02:34.727Z [poke-api] info PUT /sales - {"sale_id":2,"client_id":6,"pokemon_id":6,"value":"500","date":"2022-09-03T03:00:00.000Z"}
 2022-09-08T05:02:41.086Z [poke-api] info GET /sales
+2022-09-08T23:15:02.907Z [poke-api] info GET /pokemon
+2022-09-08T23:15:45.044Z [poke-api] info GET /pokemon:id
+2022-09-08T23:20:11.368Z [poke-api] info DELETE /pokemon/700 
+2022-09-08T23:20:23.540Z [poke-api] error GET  - clientService.getClients is not a function
+2022-09-08T23:20:57.889Z [poke-api] info GET /sales
+2022-09-08T23:22:14.243Z [poke-api] info GET /sales:id
+2022-09-10T17:14:41.913Z [poke-api] error POST  - Unexpected string in JSON at position 26
+2022-09-10T17:38:39.279Z [poke-api] error POST  - Cannot read properties of undefined (reading '0')
+2022-09-10T17:39:35.939Z [poke-api] error POST  - Cannot read properties of undefined (reading '0')
+2022-09-10T19:14:37.180Z [poke-api] error POST  - jwt is not defined
+2022-09-10T19:15:23.023Z [poke-api] error POST  - jwt is not defined
+2022-09-10T19:16:36.491Z [poke-api] error POST  - jwt is not defined
+2022-09-10T19:17:30.374Z [poke-api] info POST /client - {"client_id":7,"nome":"maria","endereco":"rua das pedras","cidade":"Charqueadas","sexo":"femin"}
+2022-09-10T19:21:22.401Z [poke-api] error POST  - vc nao tem permição para cadastrar clientes
+2022-09-10T19:30:46.730Z [poke-api] error GET  - Cannot read properties of undefined (reading 'id')
+2022-09-10T19:31:42.736Z [poke-api] error GET  - Cannot read properties of undefined (reading 'id')
+2022-09-10T19:32:08.398Z [poke-api] error GET  - Cannot read properties of undefined (reading 'id')
+2022-09-10T19:32:13.067Z [poke-api] error GET  - Cannot read properties of undefined (reading 'id')
+2022-09-10T19:32:48.482Z [poke-api] error GET  - Cannot read properties of undefined (reading 'id')
+2022-09-10T19:33:06.110Z [poke-api] error GET  - Cannot read properties of undefined (reading 'id')
+2022-09-10T19:34:10.621Z [poke-api] info GET /client:id
+2022-09-10T19:35:22.352Z [poke-api] info GET /client:id
+2022-09-10T19:41:34.440Z [poke-api] info GET /client:id
+2022-09-10T19:42:25.495Z [poke-api] info GET /client:id
+2022-09-10T19:42:34.051Z [poke-api] info GET /client:id
+2022-09-10T19:43:03.596Z [poke-api] error GET  - vc nao tem permição para consultar clientes
+2022-09-10T19:46:36.581Z [poke-api] error GET  - vc nao tem permição para consultar clientes
+2022-09-10T19:46:51.210Z [poke-api] info GET /client:id
+2022-09-10T19:46:54.806Z [poke-api] info GET /client:id
+2022-09-10T19:46:58.181Z [poke-api] info GET /client:id
+2022-09-10T19:47:26.571Z [poke-api] error GET  - rows is not defined
+2022-09-10T19:47:43.153Z [poke-api] info GET /client:id
+2022-09-10T19:47:58.430Z [poke-api] info GET /client:id
+2022-09-10T19:48:14.325Z [poke-api] info GET /client:id
+2022-09-10T19:49:51.980Z [poke-api] error GET  - res.status is not a function
+2022-09-10T19:53:06.853Z [poke-api] error GET  - res.status is not a function
+2022-09-10T19:53:12.859Z [poke-api] error GET  - client is not defined
+2022-09-10T19:53:45.446Z [poke-api] info GET /client:id
+2022-09-10T19:56:53.717Z [poke-api] info DELETE /client/7 
+2022-09-10T19:57:19.472Z [poke-api] info GET /client
+2022-09-10T20:01:34.431Z [poke-api] info PUT /client - {"client_id":3,"nome":"mateus","endereco":"rua das pedras","cidade":"sao paulo","sexo":"masculino"}
+2022-09-10T20:02:12.370Z [poke-api] info PUT /client - {"client_id":1,"nome":"roberto","endereco":"rua das pedras","cidade":"sao paulo","sexo":"masculino"}
+2022-09-10T20:02:49.674Z [poke-api] error PUT  - vc nao tem permição para atualizar clientes
+2022-09-10T20:03:47.466Z [poke-api] error PUT  - vc nao tem permição para atualizar clientes
+2022-09-10T20:04:34.509Z [poke-api] info GET /client
+2022-09-10T20:06:24.005Z [poke-api] info GET /client
+2022-09-11T23:15:20.543Z [poke-api] error POST  - todas as informacoes sao necessárias para cadastrar o pokemon
+2022-09-11T23:15:40.630Z [poke-api] info POST /pokemon - {"poke_id":1,"poke_cod":"4","apelido":"chama"}
+2022-09-11T23:16:00.824Z [poke-api] info GET /pokemon
+2022-09-11T23:16:07.420Z [poke-api] error GET  - column "pokemon_id" does not exist
+2022-09-11T23:16:50.048Z [poke-api] info GET /pokemon:id
+2022-09-11T23:20:00.711Z [poke-api] info PUT /pokemon - {"poke_id":1,"poke_cod":"4","apelido":"ditto"}
+2022-09-11T23:20:04.064Z [poke-api] info GET /pokemon:id
+2022-09-12T00:25:42.339Z [poke-api] info GET /pokemon:id
+2022-09-12T00:29:40.899Z [poke-api] info GET /pokemon:id
+2022-09-12T00:30:12.906Z [poke-api] info GET /pokemon:id
+2022-09-12T00:31:57.473Z [poke-api] info GET /pokemon:id
+2022-09-12T00:34:30.419Z [poke-api] info GET /pokemon:id
+2022-09-12T00:35:09.248Z [poke-api] error GET  - Unexpected token o in JSON at position 1
+2022-09-12T00:35:45.646Z [poke-api] error GET  - Unexpected token o in JSON at position 1
+2022-09-12T00:36:08.997Z [poke-api] info GET /pokemon:id
+2022-09-12T00:36:25.046Z [poke-api] info GET /pokemon:id
+2022-09-12T00:37:40.717Z [poke-api] info GET /pokemon:id
+2022-09-12T00:38:23.057Z [poke-api] info GET /pokemon:id
+2022-09-12T00:45:52.892Z [poke-api] info GET /pokemon:id
+2022-09-12T00:46:26.883Z [poke-api] info GET /pokemon:id
+2022-09-12T00:46:43.462Z [poke-api] info GET /pokemon:id
+2022-09-12T00:47:30.753Z [poke-api] info GET /pokemon:id
+2022-09-12T00:48:32.146Z [poke-api] info GET /pokemon:id
+2022-09-12T00:49:46.424Z [poke-api] info GET /pokemon:id
+2022-09-12T00:50:35.074Z [poke-api] info GET /pokemon:id
+2022-09-12T00:51:24.436Z [poke-api] info GET /pokemon:id
+2022-09-12T00:52:25.819Z [poke-api] error GET  - Cannot read properties of undefined (reading 'name')
+2022-09-12T00:53:36.148Z [poke-api] info GET /pokemon:id
+2022-09-12T00:53:55.250Z [poke-api] info GET /pokemon:id
+2022-09-12T00:58:29.160Z [poke-api] info GET /pokemon:id
+2022-09-12T00:58:40.481Z [poke-api] info GET /pokemon:id
+2022-09-12T01:02:55.648Z [poke-api] info GET /pokemon:id
+2022-09-12T01:03:48.971Z [poke-api] info POST /pokemon - {"poke_id":2,"poke_cod":"6","apelido":"chama"}
+2022-09-12T01:03:57.961Z [poke-api] info GET /pokemon:id
+2022-09-12T01:04:23.379Z [poke-api] error DELETE  - column "pokemon_id" does not exist
+2022-09-12T01:05:49.490Z [poke-api] info GET /pokemon:id
+2022-09-12T01:06:58.645Z [poke-api] info GET /pokemon
+2022-09-12T01:07:12.417Z [poke-api] info GET /pokemon:id
+2022-09-12T01:07:16.043Z [poke-api] info GET /pokemon:id
+2022-09-12T01:07:32.920Z [poke-api] info POST /pokemon - {"poke_id":3,"poke_cod":"30","apelido":"olha la"}
+2022-09-12T01:07:47.002Z [poke-api] info GET /pokemon:id
+2022-09-12T01:08:35.334Z [poke-api] info PUT /pokemon - {"poke_id":2,"poke_cod":"6","apelido":"fogareu"}
+2022-09-12T01:08:42.579Z [poke-api] info GET /pokemon:id
+2022-09-12T01:08:57.645Z [poke-api] error GET  - Cannot read properties of undefined (reading 'poke_cod')
+2022-09-12T01:09:54.759Z [poke-api] info DELETE /pokemon/3 
+2022-09-12T01:09:58.731Z [poke-api] error GET  - Cannot read properties of undefined (reading 'poke_cod')
+2022-09-12T01:10:02.594Z [poke-api] info GET /pokemon
+2022-09-12T01:10:28.450Z [poke-api] info GET /pokemon
