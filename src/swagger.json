@@ -1,0 +1,23 @@
+{
+    "openapi":"3.0.0",
+    "info": {
+        "title": "Venda Pokemon",
+        "description": "Ferramenta gestão de Vendas Pokemon"
+    },
+    "basePatch":"/",
+    "paths":{
+        "/pokemon":{
+            "get":{},
+            "post":{},
+            "put":{}
+        },
+        "/pokemon/:id":{
+            "get":{},
+            "delete":{}
+        }
+
+    }
+
+
+
+}

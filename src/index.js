@@ -1,6 +1,9 @@
 import express from 'express';
 import winston from 'winston';
 import cors from 'cors';
+import swaggerUI from 'swagger-ui-express';
+import swaggerDocument from './swagger.json' assert {type: "json"};
+//import swaggerJSDoc from 'swagger-jsdoc';
 
 import routerLogin from './router/login.js';
 import routerPokemons from './router/pokemons.js';
@@ -42,6 +45,11 @@ app.use((err, req, res, next) => {
     logger.error(`${req.method} ${req.baseUrl} - ${err.message}`);
     res.status(400).send({ error: err.message });
 });
+
+//documentação
+
+//var swaggerSpec = swaggerJSDoc(swaggerDocument);
+app.use('/Api-Docs', swaggerUI.serve, swaggerUI.setup(swaggerDocument));
 
 app.listen(3000, async () => {
     console.log('server on!');
